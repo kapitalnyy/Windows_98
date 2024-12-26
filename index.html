@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Windows 98</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="win98(1).png">
+        <meta charset='UTF-8'>
+        <meta name='copyright' content='Maciej Wójcikowski'>
+        <meta name='language' content='en'>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="af" id="firstdiv">
+                <div name="icon" class="icon">
+                    <img src="notepad.png">
+                </div>
+                <div class="writing1" id="writing1">
+                    Notepad
+                </div>
+            </div>
+            <div class = "a" id="div2">
+                <div class="icon">
+                    <img src="paint.png">
+                </div>
+                <div class="writing2" id="writing2">
+                    Paint
+                </div>
+            </div>
+            <div class = "a2" id="div3">
+                <div class="icon">
+                    <img src="internetexp2.png">
+                </div>
+                <div class="writing3" id="writing3">
+                    Internet Explorer
+                </div>
+            </div>
+            <div class = "a" id="div4">
+                <div class="icon2">
+                    <img src="wincalculator.png">
+                </div>
+                <div class="writing4" id="writing4">
+                    Calculator
+                </div>
+            </div>
+            <div class = "a" id="div5">
+                <div class="icon">
+                    <img src="pictures.png">
+                </div>
+                <div class="writing5" id="writing5">
+                    Pictures
+                </div>
+            </div>
+            <div class = "a" id="div6">
+                <div class="icon">
+                    <img src="game.png" >
+                </div>
+                <div class="writing6" id="writing6">
+                    Minesweeper
+                </div>
+            </div>
+            <div class = "a" id="div7">
+                <div class="icon">
+                    <img src="project.png">
+                </div>
+                <div class="writing7" id="writing7">
+                    Project.txt
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <div class="popinner" id="popinner">
+                    <div class="popdragbar" id="popinnerheader">
+                        <div class="bar-title">
+                            Utitled - Notepad
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup2">x</div>
+                        </div>
+                    </div>
+                    <div class="notebuttons">
+                        <div class="file" id="file">File</div>
+                        <div class="notehelp" id="notehelp">Help</div>
+                    </div>
+                    <div class="filelist" id="filelist">
+                        <div class="filelistbut" id="noteclears">New</div>
+                        <div class="filelistbut" id="save">Save</div>
+                        <div class="filelistbut" id="save2">Save As</div>
+                        <div class="filelistbut" id="notexit">Exit</div>
+                    </div>
+                    <div class="note" contenteditable="true">
+                        <textarea id="mytextarea" rows="5" cols="40"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="popup2" id="popup2">
+                <div class="popinner2" id="popinner2">
+                    <div class="popdragbar" id="popinner2header">
+                        <div class="bar-title">
+                            Utitled - Paint
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup21">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup22">x</div>
+                        </div>
+                    </div>
+                    <div class="paintlayout">
+                        <div class="paintcontrl">
+                            <div class="color-buttons">
+                                <button class="color-option" style="background-color: red;" data-color="red"></button>
+                                <button class="color-option" style="background-color: blue;" data-color="blue"></button>
+                                <button class="color-option" style="background-color: green;" data-color="green"></button>
+                                <button class="color-option" style="background-color: yellow;" data-color="yellow"></button>
+                                <button class="color-option" style="background-color: orange;" data-color="orange"></button>
+                                <button class="color-option" style="background-color: purple;" data-color="purple"></button>
+                                <button class="color-option" style="background-color: black;" data-color="black"></button>
+                                <button class="color-option" style="background-color: white;" data-color="white"></button>
+                                <button class="color-option" style="background-color: pink;" data-color="pink"></button>
+                                <button class="color-option" style="background-color: brown;" data-color="brown"></button>
+                                <label for="colorPicker" class="label">Color:</label>
+                                <input type="color" id="colorPicker">
+                                <label for="lineWidth" class="label">Line Width:</label>
+                                <input type="range" id="lineWidth" min="1" max="20" value="5">
+                                <button id="clearCanvas" class="paintbut">Clear</button>
+                                <button id="saveCanvas" class="paintbut">Save</button>
+                            </div>
+                        </div>
+                        <div class="paintdisplay">
+                            <canvas id="drawingCanvas" width="718" height="464"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup3" id="popup3">
+                <div class="popinner3" id="popinner3">
+                    <div class="popdragbar" id="popinner3header">
+                        <div class="bar-title">
+                            New Tab - Internet Explorer 
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup31">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup32">x</div>
+                        </div>
+                    </div>
+                    <div class="web">
+                        <iframe src="https://web.archive.org/web/19990923110609/http://www.google.com/" width="792px" height="464px" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="popup4" id="popup4">
+                <div class="popinner4" id="popinner4">
+                    <div class="popdragbar" id="popinner4header">
+                        <div class="bar-title">
+                            New Calculation
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup41">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup42">x</div>
+                        </div>
+                    </div>
+                    <div class="calcbuttons">
+                        <div class="copybtn" id="calccopy">Copy</div>
+                        <div class="notehelp" id="calchelp">Help</div>
+                    </div>
+                    <div class="calcdisplay">
+                        <input class="calcinput"  type="text" id="display" readonly>
+                    </div>
+                    <div class="calcnumbers">
+                        <div class="cancel">
+                            <input class="can"  type="button" value="Backspace" onclick="display.value = display.value.toString().slice(0,-1)">
+                            <input class="can2"  type="button" value="CE" onclick="display.value = '' ">
+                        </div>
+                        <div class="numbers">
+                            <input class="num2" type="button" value="7" onclick="display.value += '7' ">
+                            <input class="num2" type="button" value="8" onclick="display.value += '8' ">
+                            <input class="num2" type="button" value="9" onclick="display.value += '9' ">
+                            <input class="num" type="button" value="÷" onclick="display.value += '/' ">
+                            <input class="num" type="button" value="^" onclick="display.value += '**' ">
+                            <input class="num2" type="button" value="4" onclick="display.value += '4' ">
+                            <input class="num2" type="button" value="5" onclick="display.value += '5' ">
+                            <input class="num2" type="button" value="6" onclick="display.value += '6' ">
+                            <input class="num" type="button" value="x" onclick="display.value += '*' ">
+                            <input class="num" type="button" value="^2" onclick="display.value += '**2' ">
+                            <input class="num2" type="button" value="1" onclick="display.value += '1' ">
+                            <input class="num2" type="button" value="2" onclick="display.value += '2' ">
+                            <input class="num2" type="button" value="3" onclick="display.value += '3' ">
+                            <input class="num" type="button" value="-" onclick="display.value += '-' ">
+                            <input class="num" type="button" value="sin" onclick="calculateSin() ">
+                            <input class="num2" type="button" value="0" onclick="display.value += '0' ">
+                            <input class="num2" type="button" value="00" onclick="display.value += '00' ">
+                            <input class="num2" type="button" value="," onclick="display.value += '.' ">
+                            <input class="num" type="button" value="+" onclick="display.value += '+' ">
+                            <input class="num" type="button" value="=" onclick="display.value = eval(display.value)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup5" id="popup5">
+                <div class="popinner5" id="popinner5">
+                    <div class="popdragbar" id="popinner5header">
+                        <div class="bar-title">
+                            Nostalgic Pictures
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup51">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup52">x</div>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="galwrt">
+                            Below you can find nostalgic Windows 98 pictures, enjoy!
+                            <p class="p1">Fun fact: changing wallpaper on that website is possible, just go to Start -> Settings</p>
+                        </div>
+                        <div class="pic">
+                        </div>
+                        <div class="pic2">
+                        </div>
+                        <div class="pic3"></div>
+                        <div class="pic4"></div>
+                        <div class="pic5"></div>
+                        <div class="pic6"></div>
+                        <div class="pic7"></div>
+                        <div class="pic8"></div>
+                        <div class="pic9"></div>
+                        <div class="pic10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup6" id="popup6">
+                <div class="popinner6" id="popinner6">
+                    <div class="popdragbar" id="popinner6header">
+                        <div class="bar-title">
+                            New game - Minesweeper
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup61">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup62">x</div>
+                        </div>
+                    </div>
+                    <div class="gamebox" id="gameBoard">
+
+                    </div>
+                    <div class="wrr">Don't know how to play? - check Minesweeper section on Help page (deskop page -> Project.txt)</div>
+                </div>
+            </div>
+            <div class="popup7" id="popup7">
+                <div class="popinner7" id="popinner7">
+                    <div class="popdragbar7" id="popinner7header">
+                        <div class="bar-title">
+                            Project.txt
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup71">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup72">x</div>
+                        </div>
+                    </div>
+                    <div class="in">
+                        <div class="header">Hi, what you see on that page is by far the most advanced project I have ever built. I hope you had a smooth experience using it. Project built for Hack Club - High Seas 2024/25 event. Here's where you can find help with:</div>
+                        <div class="app">Notepad:
+                            <p>Features:</p>
+                            <p class="p1">- Smooth Windows 98 like writing experience with realistic options and saving option </p>
+                            <p class="p1">- Saving Files - Notepad(db click) -> File -> Save / Save as </p>
+                            <p class="p1">- New (notepad eraser) - Notepad -> File -> New</p>
+                            <p class="p1">- Exit (closes notepad) - Notepad -> File -> Exit</p>
+                            <p>Tested for any bugs, however if any occurs try refreshing the page.</p>
+                        </div>
+                        <div class="app">
+                            Paint:
+                            <p class="p1">This is an app which was styled as one of the oldest paint versions Microsoft ever created.</p>
+                            <p>Features</p>
+                            <p class="p1">- Drawing in diffrent colors - Paint(dbclick) -> Choose color you like and start drawing. You can create your own color by clicking container below 'Color:' writing!</p>
+                            <p class="p1">- Possible line width change - Paint -> Use slider</p>
+                            <p class="p1">- Clear option - Paint -> Clear Button</p>
+                            <p class="p1">- Save option (saves image you created in png file) - Paint -> Save Button</p>
+                        </div>
+                        <div class="app">
+                            Internet Explorer:
+                            <p>CAUTION - because the sites opened on this browser version are over 25 years old, it may take some time to load.</p>
+                            <p>Features:</p>
+                            <p class="p1">- Browsing on google search engine launched in 1999.</p>
+                            <p class="p1">- Opportunity to see how web looked in 1999 and check how websites from that era were being structered.</p>
+                            <p>If website take too much time to load you might visit web.archive.org website manually.</p>
+                        </div>
+                        <div class="app">
+                            Calculator:
+                            <p>Features:</p>
+                            <p class="p1">- division (÷)</p>
+                            <p class="p1">- multiplication (x)</p>
+                            <p class="p1">- substraction (-)</p>
+                            <p class="p1">- incitement (^)</p>
+                            <p class="p1">- square (^2)</p>
+                            <p class="p1">- sinus (sin)</p>
+                            <p class="p1">- Copying answear</p>
+                        </div>
+                        <div class="app">
+                            Pictures:
+                            <p>Features:</p>
+                            <p class="p1">- Viewing fun nostalgic screenshots from Windows 98 - Pictures(dbclick) </p>
+                        </div>
+                        <div class="app">
+                            Minesweeper
+                            <p>How to play?</p>
+                            <p >Objective:</p>
+                            <p class="p1">- Your goal is to uncover all the squares on the board that do not contain mines.</p>
+                            <p class="p1">- Use flags to mark potential mines and avoid clicking on them.</p>
+
+                            <p >Rules:</p>
+                            <p class="p1">- The board consists of hidden squares, some of which contain mines.</p>
+                            <p class="p1">- Left-click on a square to reveal it:</p>
+                            <p class="p1">  - If the square contains a mine, the game is over.</p>
+                            <p class="p1">  - If the square does not contain a mine, it will show a number or remain blank:</p>
+                            <p class="p1">    - A number indicates how many mines are in the surrounding 8 squares.</p>
+                            <p class="p1">    - A blank square (0 nearby mines) will automatically reveal its neighboring squares.</p>
+                            <p class="p1">- Right-click on a square to place a flag[F]. Flags help you mark squares you believe contain mines.</p>
+
+                            <p >How to Play:</p>
+                            <p class="p1">- Starting the Game:</p>
+                            <p class="p1">  - Click any square to begin. The first square is guaranteed to be safe.</p>
+                            <p class="p1">- Analyzing Clues:</p>
+                            <p class="p1">  - Numbers on revealed squares provide hints about the locations of nearby mines.</p>
+                            <p class="p1">- Placing Flags:</p>
+                            <p class="p1">  - If you're confident a square contains a mine, right-click it to place a flag. Flags can be toggled on and off.</p>
+                            <p class="p1">- Continuing:</p>
+                            <p class="p1">  - Keep uncovering squares and marking mines with flags until all safe squares are revealed.</p>
+
+                            <p >Winning the Game:</p>
+                            <p class="p1">- You win when all non-mine squares are revealed.</p>
+                            <p class="p1">- Flags are helpful but not mandatory for winning.</p>
+
+                            <p >Losing the Game:</p>
+                            <p class="p1">- The game ends immediately if you left-click on a square with a mine.</p>
+
+                            <p >Tips and Strategies:</p>
+                            <p class="p1">- Use numbers to deduce mine locations:</p>
+                            <p class="p1">  - For example, if a revealed square shows "1" and is adjacent to only one hidden square, that square must contain a mine.</p>
+                            <p class="p1">- Avoid guessing whenever possible. Use logic to determine safe squares and mine locations.</p>
+                            <p class="p1">- Be cautious: avoid rushing to click if you're uncertain about a square.</p>
+                            <p class="p1">- Early in the game, guessing might be unavoidable, but as the board clears, logic takes over.</p>
+
+                            <p >Controls:</p>
+                            <p class="p1">- Left-click: Reveal a square.</p>
+                            <p class="p1">- Right-click: Place or remove a flag.</p>
+                            <p class="p1">- Use these controls to alternate between marking potential mines and uncovering safe squares.</p>
+
+                            <p >Resetting the Game:</p>
+                            <p class="p1">- The game will automatically reset if you lose, or you can refresh the page to start a new game.</p>
+
+                        </div>
+                        <div class="app">
+                            Windows Update - cool feature which lets you decide if you want to get back to normal system or stay legend (stay on my Windows 98 page)
+                            <p class="p1">Start -> Windows Update</p>
+                        </div>
+                        <div class="app">
+                            Settings:
+                            <p>Features:</p>
+                            <p class="p1">- Choosing a wallpaper you like the most (out of 4 available) - Start -> Settings</p>
+                        </div>
+                        <div class="app">
+                            Shut down - Closes website when clicked 
+                            <p class="p1">Start -> Shut down</p>
+                        </div>
+                        <div class="app">
+                           
+                        </div>
+                        <div class="app">Thanks for visiting, have a great day! ^_^</div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup8" id="popup8">
+                <div class="popinner8" id="popinner8">
+                    <div class="winupd" id="div9">
+                        <img src="winupd.png">
+                        Windows Update
+                    </div>
+                    <div class="settings" id="div10">
+                        <img src="settings.png">
+                        Settings
+                    </div>
+                    <div class="help" id="starthelp">
+                        <img src="help.png">
+                        Help
+                    </div>
+                    <div class="shutdown" id="startshut">
+                        <img src="shutdown.png">
+                        Shut Down
+                    </div>
+                </div>
+            </div>   
+            <div class="footer">
+                <div class="leftcont">
+                    <div class="start" id="start">
+                        <div class="starticon">
+                            <img src="winstart.png">
+                            Start
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="clock" id="clock">
+                </div>
+            </div>
+            <div class="popup9" id="popup9">
+                <div class="popinner9" id="popinner9">
+                    <div class="popdragbar" id="popinner9header">
+                        <div class="bar-title">
+                            Settings
+                        </div>
+                        <div class="buttons">
+                            <div class="min" id="close-popup91">
+                                <div class="minimalize">_</div>
+                            </div>
+                            <div class="min" id="close-popup92">x</div>
+                        </div>
+                    </div>
+                    <div class="wr">Choose your wallpaper:</div>
+                    <div class="gal">
+                        <div class="wall1" id="wall1"></div>
+                        <div class="wall2" id="wall2"></div>
+                        <div class="wall3" id="wall3"></div>
+                        <div class="wall4" id="wall4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html> 
+
+<!--what left to do (level: impossible):
+    touch grass
+    enjoy Christmas break without coding
+-->
